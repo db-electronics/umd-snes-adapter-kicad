@@ -12,4 +12,4 @@ PARTICULAR PURPOSE. Please see the CERN OHL v.1.2 for applicable
 conditions
 
 # UMD Adapters
-This KiCad project contains cartridges adapters for the [Universal Mega Dumper](https://github.com/db-electronics/Universal-Mega-Dumper).
+This KiCad project contains cartridge adapters for the [Universal Mega Dumper](https://github.com/db-electronics/Universal-Mega-Dumper).
