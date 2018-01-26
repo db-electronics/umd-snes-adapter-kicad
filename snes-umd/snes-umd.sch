@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:snes-umd-rescue
 LIBS:db-diodes
 LIBS:db-memory
 LIBS:db-passives
@@ -482,7 +483,7 @@ Wire Wire Line
 Text Label 7300 3050 0    60   ~ 0
 ~WR
 $Comp
-L SNES-CONN C102
+L SNES-CONN-RESCUE-snes-umd C102
 U 1 1 5A62100A
 P 2950 5500
 F 0 "C102" H 3050 9000 60  0000 C CNN
