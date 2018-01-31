@@ -7,37 +7,6 @@ LIBS:db-sem
 LIBS:db-transistors
 LIBS:db-vgparts
 LIBS:power
-LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:motors
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
 LIBS:snes-umd-cache
 EELAYER 25 0
 EELAYER END
@@ -53,28 +22,6 @@ Comment2 "https://github.com/db-electronics/umd-adapters-kicad"
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L umd-conn C101
-U 1 1 5A5E3E42
-P 6500 5550
-F 0 "C101" H 6625 9000 60  0000 C CNN
-F 1 "umd-conn" H 6725 8900 60  0000 C CNN
-F 2 "db-thparts:UMD-CONN-DIP64" H 6850 6100 60  0001 C CNN
-F 3 "" H 6850 6100 60  0001 C CNN
-	1    6500 5550
-	1    0    0    -1  
-$EndComp
-$Comp
-L umd-conn C101
-U 2 1 5A5E3EE5
-P 8050 5550
-F 0 "C101" H 8175 9000 60  0000 C CNN
-F 1 "umd-conn" H 8275 8900 60  0000 C CNN
-F 2 "" H 8400 6100 60  0001 C CNN
-F 3 "" H 8400 6100 60  0001 C CNN
-	2    8050 5550
-	1    0    0    -1  
-$EndComp
 $Comp
 L GND #PWR01
 U 1 1 5A60AC08
@@ -482,17 +429,6 @@ Wire Wire Line
 	7850 3050 7250 3050
 Text Label 7300 3050 0    60   ~ 0
 ~WR
-$Comp
-L SNES-CONN-RESCUE-snes-umd C102
-U 1 1 5A62100A
-P 2950 5500
-F 0 "C102" H 3050 9000 60  0000 C CNN
-F 1 "SNES-CONN" H 3200 8900 60  0000 C CNN
-F 2 "db-thparts:SNES-CONN-EXP" H 3150 5400 60  0001 C CNN
-F 3 "" H 3150 5400 60  0001 C CNN
-	1    2950 5500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7850 2950 7250 2950
 Text Label 7300 2950 0    60   ~ 0
@@ -505,4 +441,37 @@ Wire Wire Line
 	7850 5450 7700 5450
 Wire Wire Line
 	7700 5450 7700 5600
+$Comp
+L SNES-CONN CON102
+U 1 1 5A716175
+P 2950 2200
+F 0 "CON102" H 3075 2350 60  0000 C CNN
+F 1 "SNES-CONN" H 3250 2250 60  0000 C CNN
+F 2 "" H 3150 -1200 60  0001 C CNN
+F 3 "" H 3150 -1200 60  0001 C CNN
+	1    2950 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L UMD-CONN CON101
+U 1 1 5A7163E6
+P 6500 5550
+F 0 "CON101" H 6650 9000 60  0000 C CNN
+F 1 "UMD-CONN" H 6750 8900 60  0000 C CNN
+F 2 "db-thparts:UMD-CONN-DIP64" H 7225 9200 60  0001 C CNN
+F 3 "" H 6850 6100 60  0001 C CNN
+	1    6500 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L UMD-CONN CON101
+U 2 1 5A7164A1
+P 8050 5550
+F 0 "CON101" H 8200 9000 60  0000 C CNN
+F 1 "UMD-CONN" H 8300 8900 60  0000 C CNN
+F 2 "db-thparts:UMD-CONN-DIP64" H 8775 9200 60  0001 C CNN
+F 3 "" H 8400 6100 60  0001 C CNN
+	2    8050 5550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
