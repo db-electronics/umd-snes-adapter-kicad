@@ -1,4 +1,4 @@
-update=Tue 30 Jan 2018 07:54:58 AM EST
+update=Thu 01 Feb 2018 04:08:48 PM EST
 version=1
 last_client=kicad
 [pcbnew]
@@ -33,8 +33,6 @@ NetFmtName=
 SpiceForceRefPrefix=0
 SpiceUseNetNumbers=0
 LabSize=60
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=/home/rene/Git/KiCad/kicadlib
@@ -47,3 +45,5 @@ LibName5=db-sem
 LibName6=db-transistors
 LibName7=db-vgparts
 LibName8=power
+[general]
+version=1
