@@ -11,5 +11,5 @@ MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A
 PARTICULAR PURPOSE. Please see the CERN OHL v.1.2 for applicable
 conditions
 
-# UMD Adapters
-This KiCad project contains cartridge adapters for the [Universal Mega Dumper](https://github.com/db-electronics/Universal-Mega-Dumper).
+# SNES UMD Adapters
+This KiCad project contains the SNES cartridge adapter for the [Universal Mega Dumper](https://github.com/db-electronics/Universal-Mega-Dumper).
