@@ -1,7 +1,7 @@
 (kicad_pcb (version 4) (host pcbnew 4.0.7-e2-6376~58~ubuntu16.04.1)
 
   (general
-    (links 0)
+    (links 41)
     (no_connects 0)
     (area 130.480999 57.821652 150.951001 159.21978)
     (thickness 1.6)
@@ -15,7 +15,7 @@
   (page USLetter)
   (title_block
     (title "SNES UMD Adapter")
-    (date 2018-01-24)
+    (date 2018-02-01)
     (rev 0.1)
     (company "db Electronics")
     (comment 1 "Licensed under the CERN OHL v.1.2")
@@ -77,11 +77,11 @@
       (layerselection 0x010f0_80000001)
       (usegerberextensions true)
       (excludeedgelayer true)
-      (linewidth 0.100000)
+      (linewidth 0.177800)
       (plotframeref false)
       (viasonmask false)
       (mode 1)
-      (useauxorigin false)
+      (useauxorigin true)
       (hpglpennumber 1)
       (hpglpenspeed 20)
       (hpglpendiameter 15)
