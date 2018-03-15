@@ -1,4 +1,4 @@
-update=Thu 01 Feb 2018 08:35:24 PM EST
+update=Thu 15 Mar 2018 10:36:15 AM EDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,16 +27,13 @@ NetIExt=net
 version=1
 LibDir=/home/rene/Git/KiCad/kicadlib
 [eeschema/libraries]
-LibName1=snes-umd-rescue
-LibName2=db-diodes
-LibName3=db-memory
-LibName4=db-passives
-LibName5=db-sem
-LibName6=db-transistors
-LibName7=db-vgparts
-LibName8=power
-[general]
-version=1
+LibName1=db-diodes
+LibName2=db-memory
+LibName3=db-passives
+LibName4=db-sem
+LibName5=db-transistors
+LibName6=db-vgparts
+LibName7=power
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
@@ -47,3 +44,5 @@ NetFmtName=
 SpiceForceRefPrefix=0
 SpiceUseNetNumbers=0
 LabSize=60
+[general]
+version=1

@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:snes-umd-rescue
 LIBS:db-diodes
 LIBS:db-memory
 LIBS:db-passives
@@ -18,7 +17,7 @@ Date "2018-02-01"
 Rev "0.1"
 Comp "db Electronics"
 Comment1 "Licensed under the CERN OHL v.1.2"
-Comment2 "https://github.com/db-electronics/umd-adapters-kicad"
+Comment2 "https://github.com/db-electronics/umd-snes-adapter-kicad"
 Comment3 ""
 Comment4 ""
 $EndDescr
