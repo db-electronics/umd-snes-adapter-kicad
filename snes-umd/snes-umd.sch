@@ -13,8 +13,8 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "SNES UMD Adapter"
-Date "2018-02-01"
-Rev "0.1"
+Date "2018-05-10"
+Rev "0.2"
 Comp "db Electronics"
 Comment1 "Licensed under the CERN OHL v.1.2"
 Comment2 "https://github.com/db-electronics/umd-snes-adapter-kicad"
@@ -236,7 +236,7 @@ A12
 Wire Wire Line
 	4300 2900 4875 2900
 Text Label 4825 2900 2    60   ~ 0
-~RESET
+~RST
 $Comp
 L +5V #PWR07
 U 1 1 5A61052A
@@ -421,7 +421,7 @@ Text Label 7300 3050 0    60   ~ 0
 Wire Wire Line
 	7850 2950 7250 2950
 Text Label 7300 2950 0    60   ~ 0
-~RESET
+~RST
 Wire Wire Line
 	6300 5450 6150 5450
 Wire Wire Line
@@ -430,28 +430,6 @@ Wire Wire Line
 	7850 5450 7700 5450
 Wire Wire Line
 	7700 5450 7700 5600
-$Comp
-L UMD-CONN CON101
-U 1 1 5A7163E6
-P 6500 5550
-F 0 "CON101" H 6650 9000 60  0000 C CNN
-F 1 "UMD-CONN" H 6750 8900 60  0000 C CNN
-F 2 "db-thparts:UMD-CONN-DIP64" H 7225 9200 60  0001 C CNN
-F 3 "" H 6850 6100 60  0001 C CNN
-	1    6500 5550
-	1    0    0    -1  
-$EndComp
-$Comp
-L UMD-CONN CON101
-U 2 1 5A7164A1
-P 8050 5550
-F 0 "CON101" H 8200 9000 60  0000 C CNN
-F 1 "UMD-CONN" H 8300 8900 60  0000 C CNN
-F 2 "db-thparts:UMD-CONN-DIP64" H 8775 9200 60  0001 C CNN
-F 3 "" H 8400 6100 60  0001 C CNN
-	2    8050 5550
-	1    0    0    -1  
-$EndComp
 $Comp
 L SNES-CONN CON102
 U 1 1 5A716175
@@ -1022,4 +1000,166 @@ Wire Wire Line
 	6100 2250 6100 2350
 Wire Wire Line
 	6100 2350 6300 2350
+$Comp
+L UMD-CONN CON101
+U 1 1 5ABBC36F
+P 6500 5550
+F 0 "CON101" H 6650 9000 60  0000 C CNN
+F 1 "UMD-CONN" H 6750 8900 60  0000 C CNN
+F 2 "db-thparts:UMD-CONN-DIP64" H 7225 9200 60  0001 C CNN
+F 3 "" H 6850 6100 60  0001 C CNN
+	1    6500 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L UMD-CONN CON101
+U 2 1 5ABBC462
+P 8050 5550
+F 0 "CON101" H 8200 9000 60  0000 C CNN
+F 1 "UMD-CONN" H 8300 8900 60  0000 C CNN
+F 2 "db-thparts:UMD-CONN-DIP64" H 8775 9200 60  0001 C CNN
+F 3 "" H 8400 6100 60  0001 C CNN
+	2    8050 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L SN74HC165PWR U?
+U 1 1 5AF4E443
+P 3100 6500
+F 0 "U?" H 2975 6575 50  0000 C CNN
+F 1 "SN74HC165PWR" H 4000 5800 50  0000 C CNN
+F 2 "db-smt:TSSOP-16" H 3575 7200 60  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc165.pdf" H 4300 7100 60  0001 C CNN
+F 4 "296-8253-1-ND" H 3550 7000 60  0001 C CNN "Digikey"
+F 5 "IC 8-BIT SHIFT REGISTER 16-TSSOP" H 4000 6900 60  0001 C CNN "Description"
+	1    3100 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5AF4E867
+P 3650 7450
+F 0 "#PWR?" H 3650 7200 50  0001 C CNN
+F 1 "GND" H 3650 7300 50  0000 C CNN
+F 2 "" H 3650 7450 50  0001 C CNN
+F 3 "" H 3650 7450 50  0001 C CNN
+	1    3650 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 2450 7250 2450
+Text Label 7300 2450 0    60   ~ 0
+~MISO
+Wire Wire Line
+	7850 2550 7250 2550
+Text Label 7300 2550 0    60   ~ 0
+SCK
+Wire Wire Line
+	7850 3150 7250 3150
+Text Label 7300 3150 0    60   ~ 0
+~ID
+Wire Wire Line
+	2900 6850 2300 6850
+Text Label 2350 6850 0    60   ~ 0
+~RST
+Wire Wire Line
+	4950 7050 4350 7050
+Text Label 4400 7050 0    60   ~ 0
+~MISO
+Wire Wire Line
+	2900 6950 2300 6950
+Text Label 2350 6950 0    60   ~ 0
+SCK
+Wire Wire Line
+	3650 7350 3650 7450
+$Comp
+L GND #PWR?
+U 1 1 5AF4F7F8
+P 2800 7450
+F 0 "#PWR?" H 2800 7200 50  0001 C CNN
+F 1 "GND" H 2800 7300 50  0000 C CNN
+F 2 "" H 2800 7450 50  0001 C CNN
+F 3 "" H 2800 7450 50  0001 C CNN
+	1    2800 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 7050 2800 7050
+Wire Wire Line
+	2800 6200 2800 7450
+Wire Wire Line
+	2900 6650 2800 6650
+Connection ~ 2800 7050
+$Comp
+L +5V #PWR?
+U 1 1 5AF4FB68
+P 4500 6150
+F 0 "#PWR?" H 4500 6000 50  0001 C CNN
+F 1 "+5V" H 4500 6290 50  0000 C CNN
+F 2 "" H 4500 6150 50  0001 C CNN
+F 3 "" H 4500 6150 50  0001 C CNN
+	1    4500 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_0603 C?
+U 1 1 5AF50199
+P 4800 6650
+F 0 "C?" V 4550 6600 50  0000 L CNN
+F 1 "0.1uF/50V" V 4650 6600 50  0000 L CNN
+F 2 "db-smt:0603" H 5300 6550 30  0001 C CNN
+F 3 "" H 4825 6750 60  0001 C CNN
+F 4 "445-5666-1-ND" H 5225 6625 60  0001 C CNN "Digikey"
+F 5 "CAP CER 0.1UF 50V X7R 0603" H 5225 6725 60  0001 C CNN "Description"
+	1    4800 6650
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5AF50358
+P 5050 6750
+F 0 "#PWR?" H 5050 6500 50  0001 C CNN
+F 1 "GND" H 5050 6600 50  0000 C CNN
+F 2 "" H 5050 6750 50  0001 C CNN
+F 3 "" H 5050 6750 50  0001 C CNN
+	1    5050 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 6650 4650 6650
+Wire Wire Line
+	4500 6150 4500 6650
+Connection ~ 4500 6650
+Wire Wire Line
+	4950 6650 5050 6650
+Wire Wire Line
+	5050 6650 5050 6750
+Wire Wire Line
+	3900 6300 3900 6200
+Wire Wire Line
+	3900 6200 4500 6200
+Connection ~ 4500 6200
+Wire Wire Line
+	4000 6300 4000 6200
+Connection ~ 4000 6200
+Wire Wire Line
+	3800 6300 3800 6200
+Wire Wire Line
+	3800 6200 2800 6200
+Connection ~ 2800 6650
+Wire Wire Line
+	3300 6300 3300 6200
+Connection ~ 3300 6200
+Wire Wire Line
+	3400 6300 3400 6200
+Connection ~ 3400 6200
+Wire Wire Line
+	3500 6300 3500 6200
+Connection ~ 3500 6200
+Wire Wire Line
+	3600 6300 3600 6200
+Connection ~ 3600 6200
+Wire Wire Line
+	3700 6300 3700 6200
+Connection ~ 3700 6200
 $EndSCHEMATC
